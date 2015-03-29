@@ -1,0 +1,26 @@
+<template name="appBody">
+<div class="container">
+<div class="row">
+	<section id="menu" class="col-sm-4">
+	  <div class="list-todos">
+		<a class="js-new-list link-list-new"><span class="glyphicon glyphicon-plus"></span> New List</a>
+
+		{{ #each lists }}
+		  <a href="{{ pathFor 'listsShow' }}" class="list-todo">
+			{{ #if incompleteCount }}
+			  <span class="count-list">{{ incompleteCount }}</span>
+			{{ /if }}
+			{{ name }}
+		  </a>
+		{{ /each }}
+	  </div>
+	</section>
+
+	<div id="content-container" class="col-sm-8">
+	  {{ #each thisArray }}
+		{{ > yield }}
+	  {{ /each }}
+	</div>
+</div>
+</div>
+</template>
