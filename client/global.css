@@ -1,0 +1,372 @@
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../tests/sass/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, ../tests/sass/_layout.scss */
+html {
+  position: relative;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 16, ../tests/sass/_layout.scss */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-top: 53px;
+  padding-bottom: 64px;
+}
+
+/* line 23, ../tests/sass/_layout.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 53px;
+  width: 100%;
+}
+
+/* line 31, ../tests/sass/_layout.scss */
+.main {
+  height: 100%;
+}
+
+/* line 35, ../tests/sass/_layout.scss */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+}
+
+/* line 1, ../tests/sass/components/_header.scss */
+.team-menu {
+  position: relative;
+  width: 220px;
+  height: 53px;
+  line-height: 53px;
+  font-weight: 900;
+  padding: 0 1rem;
+  color: #ffffff;
+  background: #3e313c;
+  border-bottom: 2px solid #372c36;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 19, ../tests/sass/components/_header.scss */
+.channel-menu_name {
+  display: inline-block;
+  padding: 0 .5rem 0 1.5rem;
+  color: #555459;
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 53px;
+  cursor: pointer;
+}
+
+/* line 29, ../tests/sass/components/_header.scss */
+.channel-menu_prefix {
+  color: #9e9ea6;
+  padding-right: .1rem;
+  font-weight: 500;
+}
+
+/* line 1, ../tests/sass/components/_main.scss */
+.listings {
+  height: 100%;
+  width: 220px;
+  float: left;
+  color: #ab9ba9;
+  background-color: #4d394b;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* line 11, ../tests/sass/components/_main.scss */
+.message-history {
+  margin-left: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  padding: 0 18px 1rem 1.5rem;
+}
+
+/* line 4, ../tests/sass/components/_listings.scss */
+.listings_channels {
+  margin: 1rem 0 2rem;
+}
+
+/* line 8, ../tests/sass/components/_listings.scss */
+.listings_header {
+  text-align: left;
+  font-size: .8rem;
+  line-height: 1.25rem;
+  margin: 0 1rem .1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ab9ba9;
+  width: 165px;
+  position: relative;
+}
+
+/* line 20, ../tests/sass/components/_listings.scss */
+.channel_list {
+  list-style-type: none;
+  text-align: left;
+  color: #ab9ba9;
+}
+
+/* line 26, ../tests/sass/components/_listings.scss */
+.channel {
+  height: 24px;
+  line-height: 24px;
+  -moz-border-radius-topright: 0.25rem;
+  -webkit-border-top-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -moz-border-radius-bottomright: 0.25rem;
+  -webkit-border-bottom-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  margin-right: 17px;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+/* line 35, ../tests/sass/components/_listings.scss */
+.unread {
+  color: #ffffff;
+  background: #eb4d5c;
+  border-radius: 9px;
+  padding: 2px 9px;
+  font-size: .8rem;
+  line-height: 14px;
+  font-weight: 700;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  float: right;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+/* line 51, ../tests/sass/components/_listings.scss */
+.channel.active {
+  background: #4c9689;
+}
+
+/* line 55, ../tests/sass/components/_listings.scss */
+.channel_prefix {
+  color: #b2d5c9;
+}
+
+/* line 59, ../tests/sass/components/_listings.scss */
+.disclaimer {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  margin-right: 17px;
+}
+
+/* line 4, ../tests/sass/components/_message.scss */
+.message {
+  position: relative;
+  margin-top: .5rem;
+  padding: .25rem 2rem .1rem 3rem;
+  min-height: 36px;
+}
+
+/* line 11, ../tests/sass/components/_message.scss */
+.message_profile-pic {
+  position: absolute;
+  left: 0;
+  display: block;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  width: 36px;
+  height: 36px;
+  background-image: url("http://i.imgur.com/LikUNLc.png");
+  background-size: cover;
+}
+
+/* line 22, ../tests/sass/components/_message.scss */
+.message_username {
+  font-weight: 900;
+  padding-right: .25rem;
+  color: #3d3c40 !important;
+  margin-left: 0;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* line 31, ../tests/sass/components/_message.scss */
+.message_timestamp {
+  text-align: left;
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #babbbf;
+  font-size: 12px;
+  line-height: 1.2rem;
+  width: 36px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 45, ../tests/sass/components/_message.scss */
+.message_content {
+  color: #8b898f;
+  font-style: italic;
+  display: block;
+  min-height: 1rem;
+}
+
+/* line 4, ../tests/sass/components/_user-menu.scss */
+.user-menu {
+  float: left;
+  width: 220px;
+  height: 100%;
+  cursor: pointer;
+  background: #3e313c;
+  border-top: 2px solid #372c36;
+  padding: 7px 0 9px 8px;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 18, ../tests/sass/components/_user-menu.scss */
+.user-menu_profile-pic {
+  display: inline-block;
+  float: left;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  width: 48px;
+  height: 48px;
+  background-image: url("http://i.imgur.com/LikUNLc.png");
+  background-size: cover;
+  margin-right: 8px;
+}
+
+/* line 29, ../tests/sass/components/_user-menu.scss */
+.user-menu_username {
+  display: block;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 1.5rem;
+  margin-top: .2rem;
+  max-width: 120px;
+}
+
+/* line 38, ../tests/sass/components/_user-menu.scss */
+.connection_icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* line 43, ../tests/sass/components/_user-menu.scss */
+.connection_status {
+  color: #ab9ba9;
+}
+
+/* line 1, ../tests/sass/components/_input-box.scss */
+.input-box {
+  height: 100%;
+  margin-left: 220px;
+}
+
+/* line 6, ../tests/sass/components/_input-box.scss */
+.input-box_text {
+  font-size: .95rem;
+  width: 90%;
+  margin-left: 2%;
+  margin-bottom: auto;
+  line-height: 1.2rem;
+  border: 2px solid #e0e0e0;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #3d3c40;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  bottom: 0;
+  min-height: 41px !important;
+  padding: 9px 5px 9px 8px;
+}

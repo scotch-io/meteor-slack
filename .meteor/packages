@@ -5,7 +5,5 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
-iron:router@0.9.4
-twbs:bootstrap
 autopublish
+insecure
