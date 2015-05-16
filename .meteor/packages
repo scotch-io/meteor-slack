@@ -7,3 +7,5 @@
 meteor-platform
 autopublish
 insecure
+anti:fake
+dburles:factory
