@@ -1,3 +1,4 @@
+anti:fake@0.4.1
 autopublish@1.0.3
 autoupdate@1.2.1
 base64@1.0.3
@@ -7,6 +8,7 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
+dburles:factory@0.3.10
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
