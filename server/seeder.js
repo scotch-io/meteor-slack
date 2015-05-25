@@ -1,5 +1,11 @@
 Meteor.startup(function() {
 
+  Accounts.createUser({
+    username: "scotchio",
+    email: "scotch@example.com",
+    password: "dummypassword"
+  });
+
   Factory.define('message', Messages, {
     text: function() {
     	return Fake.sentence();
