@@ -1,8 +1,8 @@
 <template name="message">
 	<div class="message">
 		<a href="" class="message_profile-pic"></a>
-		<a href="" class="message_username">scotch</a>
-		<span class="message_timestamp">1:31 AM</span>
+		<a href="" class="message_username">{{usernameFromId user}}</a>
+		<span class="message_timestamp">{{timestampToTime timestamp}}</span>
 		<span class="message_star"></span>
 		<span class="message_content">{{text}}</span>
 	</div>

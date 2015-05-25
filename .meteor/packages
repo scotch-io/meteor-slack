@@ -5,5 +5,10 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+anti:fake
+dburles:factory
+accounts-base
+accounts-password
+accounts-ui
+accounts-github
+email
