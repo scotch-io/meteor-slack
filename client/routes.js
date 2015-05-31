@@ -3,6 +3,7 @@ Router.configure({
 });
 
 Router.route('/:channel', function () {
+	Session.set('channel', this.params.channel);
 	this.render('messages');
 });
 
