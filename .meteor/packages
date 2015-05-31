@@ -12,3 +12,4 @@ accounts-password
 accounts-ui
 accounts-github
 email
+iron:router
