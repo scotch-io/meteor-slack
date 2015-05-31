@@ -5,13 +5,15 @@ Template.footer.events({
       var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
       if (charCode == 13) {
         e.stopPropagation();
-        Meteor.call('newMessage', {text: $('.input-box_text').val()});
+        Meteor.call('newMessage', {
+          text: $('.input-box_text').val(),
+          channel: Session.get('channel')
+        });
         $('.input-box_text').val("");
         return false;
       }    
     }
   }
-});});
 });
 
 Template.channel.events({
