@@ -3,7 +3,9 @@
 		<div class="listings_channels">
 			<h2 class="listings_header">Channels</h2>
 			<ul class="channel_list">
-				{{> channel}}
+				{{#each channels}}
+					{{> channel name=name}}
+				{{/each}}
 			</ul>
 			
 		</div>

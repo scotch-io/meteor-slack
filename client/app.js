@@ -25,5 +25,11 @@ Template.registerHelper("usernameFromId", function (userId) {
 	return user.username;
 });
 
+Template.listings.helpers({
+	channels: function () {
+		return Channels.find();
+	}
+});
+
 Meteor.subscribe('messages');
 Meteor.subscribe('allUsernames');
