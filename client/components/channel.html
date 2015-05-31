@@ -1,12 +1,12 @@
 <template name="channel">
-	<li class="channel active">
+	<li class="channel {{active}}">
 		<a class="channel_name">
 			<span class="unread">
 				0
 			</span>
 			<span>
 				<span class="prefix">#</span>
-				slack
+				<span class="channel-name">{{name}}</span>
 			</span>
 		</a>
 	</li>
